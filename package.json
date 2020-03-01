@@ -1,0 +1,20 @@
+{
+  "name": "hexo-random-top-img",
+  "version": "0.0.4",
+  "description": "Get a random image for top image.",
+  "main": "index",
+  "keywords": [
+    "hexo",
+    "image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fyved24/hexo-random-top-img"
+  },
+  "author": "Ironz",
+  "license":  "MIT",
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
