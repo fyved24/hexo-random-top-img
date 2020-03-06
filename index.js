@@ -7,17 +7,21 @@ hexo.extend.filter.register('before_post_render',async function(data) {
 
   if (config.random_top_img.enable) {
     if (!config.random_top_img.ignore.includes(data.title)) {
-      img = data.top_img;
+      key = 'top_img';
+      if (config.random_top_img.custom_key) {
+        key = config.random_top_img.custom_key;
+      }
+      img = data[key];
       if (!img) {
         var size = config.random_top_img.size;
         var keywords = config.random_top_img.keywords;
         let tmpPost = front.parse(data.raw);
         
         let url = await util.get_img(size, keywords);
-        tmpPost.top_img = url;
+        tmpPost[key] = url;
         let postStr = front.stringify(tmpPost);
         postStr = '---\n' + postStr;
-        var result = postStr.replace('>-\n  ', '');
+        var result = postStr.replace(/>-\n  /g, '');
         console.log(`new top img for ${tmpPost.title}`);
         console.log(url);
         fs.writeFileSync(data.full_source, result, 'utf-8');

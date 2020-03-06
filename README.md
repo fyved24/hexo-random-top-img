@@ -1,13 +1,11 @@
 # hexo-random-top-img
 
-[![NPM version](https://badge.fury.io/js/hexo-filter-auto-spacing.svg)](http://badge.fury.io/js/hexo-filter-auto-spacing)
-
 Get a random image for top img.
 
 ## Install
 
 ``` bash
-$ npm hexo-random-top-img --save
+$ npm install hexo-random-top-img --save
 ```
 
 or
@@ -16,7 +14,18 @@ $ yarn add hexo-random-top-img
 ```
 
 ## Use
+
+If you use the theme, its top img format is as follows, you can use
+
+```
+title: Hello World
+top_img: https://via.placeholder.com/1600x900.png?text=Your+Image+Url
+```
+
+
+
 _config.yml
+
 ```yml
 random_top_img:
   enable: true
@@ -27,3 +36,6 @@ random_top_img:
     - categories
     - about
 ```
+
+
+
