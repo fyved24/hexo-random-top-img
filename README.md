@@ -1,5 +1,7 @@
 # hexo-random-top-img
 
+![npm](https://img.shields.io/npm/v/hexo-random-top-img)![GitHub package.json version](https://img.shields.io/github/package-json/v/fyved24/hexo-random-top-img)![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/fyved24/hexo-random-top-img/develop)
+
 Get a random image for top img.
 
 ## Install
