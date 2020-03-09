@@ -1,6 +1,6 @@
 {
   "name": "hexo-random-top-img",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Get a random image for top image.",
   "main": "index",
   "keywords": [
@@ -14,7 +14,6 @@
   "author": "Ironz",
   "license":  "MIT",
   "dependencies": {
-    "request": "^2.88.2",
-    "request-promise": "^4.2.5"
+    "axios": "^0.19.2"
   }
 }
