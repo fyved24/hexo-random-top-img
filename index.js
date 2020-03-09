@@ -18,7 +18,11 @@ hexo.extend.filter.register('before_post_render',async function(data) {
         let tmpPost = front.parse(data.raw);
         let url = await util.get_img(size, keywords);
         if (config.random_top_img.save) {
+<<<<<<< HEAD
           url = util.download_img(url, 'img')
+=======
+          url = util.download_img(url, 'source/images')
+>>>>>>> 07b1822c2509b73deebf796bddb86b4323d554dc
         }
         tmpPost[key] = url;
         let postStr = front.stringify(tmpPost);
