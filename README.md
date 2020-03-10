@@ -17,7 +17,7 @@ $ yarn add hexo-random-top-img
 
 ## Use
 
-If you use the theme, its top img format is as follows, you can use directly
+If you use the theme, its top_img format is as follows, you can use directly
 
 ```
 title: Hello World
@@ -36,6 +36,7 @@ _config.yml
 ```yml
 random_top_img:
   enable: true
+  # save: true
   size: 1600x900 # size
   # custom_key: img  # custom key
   keywords: sky, cloud # keywords
@@ -44,4 +45,9 @@ random_top_img:
     - categories
     - about
 ```
-
+## optional
+if you want to save the images,uncomment save,and images will be save to **source/img/** directory.its top img format will be as follows
+```
+title: Hello World
+top_img: /img/img.jpeg
+```
