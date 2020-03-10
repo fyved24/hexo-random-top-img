@@ -1,6 +1,6 @@
 {
   "name": "hexo-random-top-img",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Get a random image for top image.",
   "main": "index",
   "keywords": [
